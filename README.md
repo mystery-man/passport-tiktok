@@ -11,7 +11,7 @@ This module lets you authenticate using Tiktok in your Node.js applications. By 
 This is a module for node.js and is installed via npm:
 
 ``` bash
-npm install passport-tiktok --save
+npm install passport-tiktok-auth --save
 ```
 
 ## Usage

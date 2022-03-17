@@ -23,9 +23,9 @@ The Tiktok authentication strategy authenticates users using a Tiktok account an
 ``` js
 passport.use(new TiktokStrategy({
         clientID: TIKTOK_CLIENT_ID,
-        clientSecret: TIKTOK_APP_SECRET,
-        callbackURL: "https://localhost:3000/auth/tiktok/callback",
-        state: true
+        clientSecret: TIKTOK_CLIENT_SECRET,
+        scope: ['user.info.basic'],
+        callbackURL: "https://localhost:3000/auth/tiktok/callback"
     },
     function(accessToken, refreshToken, profile, done) {
         User.findOrCreate({ tiktokId: profile.id }, function (err, user) {

@@ -1,6 +1,6 @@
 {
   "name": "passport-tiktok-auth",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tiktok authentication strategy for Passport.",
   "keywords": [
     "passport",

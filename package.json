@@ -1,0 +1,50 @@
+{
+  "name": "passport-tiktok",
+  "version": "1.0.0",
+  "description": "Tiktok authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "tiktok",
+    "auth",
+    "authn",
+    "authentication",
+    "authz",
+    "authorization",
+    "identity"
+  ],
+  "homepage": "https://github.com/mystery-man/passport-tiktok",
+  "bugs": {
+    "url": "https://github.com/mystery-man/passport-tiktok/issues"
+  },
+  "license": "ISC",
+  "author": "Zohaib Shakir (https://github.com/mystery-man)",
+  "main": "./lib/passport-tiktok/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mystery-man/passport-tiktok.git"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/gulp ci"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "passport-oauth": "1.0.x",
+    "pkginfo": "^0.4"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.x",
+    "chalk": "1.1.x",
+    "gulp": "3.9.x",
+    "gulp-coveralls": "0.1.x",
+    "gulp-istanbul": "0.10.x",
+    "gulp-jshint": "2.0.x",
+    "gulp-mocha": "2.2.x",
+    "jshint": "2.9.x",
+    "jshint-stylish": "2.2.x",
+    "rimraf": "2.5.x",
+    "run-sequence": "1.2.x"
+  }
+}

@@ -56,6 +56,24 @@ app.get('/auth/tiktok/callback',
     }
 );
 ```
+### Versions
+By default we have moved to v2. If v1 is required it can be used like the following example.
+
+``` js
+passport.use(new TiktokStrategy({
+        version: "v1",
+        clientID: TIKTOK_CLIENT_ID,
+        clientSecret: TIKTOK_CLIENT_SECRET,
+        scope: ['user.info.basic'],
+        callbackURL: "https://localhost:3000/auth/tiktok/callback"
+    },
+    function(accessToken, refreshToken, profile, done) {
+        User.findOrCreate({ tiktokId: profile.id }, function (err, user) {
+            return done(err, user);
+        });
+    }
+));
+```
 
 ## License (ISC)
 
